@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="368.0" prefWidth="433.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Bukutelponcontroller">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <Label text="Nama" />
+            <TextField fx:id="tnama" promptText="Masukan Nama" />
+            <Label text="No Hp" />
+            <TextField fx:id="tnohp" promptText="Masukan No HP" />
+            <HBox prefHeight="0.0" prefWidth="423.0" spacing="5.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Button fx:id="bsimpan" mnemonicParsing="false" text="Simpan" />
+                  <Button fx:id="bupdate" mnemonicParsing="false" text="Update" />
+                  <Button fx:id="bhapus" mnemonicParsing="false" text="Hapus" />
+                  <Button fx:id="bform2" mnemonicParsing="false" text="Form 2" />
+               </children>
+            </HBox>
+            <TableView fx:id="tv" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="nama" prefWidth="197.0" text="NAMA" />
+                  <TableColumn fx:id="nohp" prefWidth="135.0" text="NO HP" />
+              </columns>
+            </TableView>
+            <TextField fx:id="tcari" promptText="Cari Data" />
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
